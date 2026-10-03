@@ -9,6 +9,7 @@ struct ProcessInfo {
     std::string name;
     char state;
     long memory_kb;
+    double cpu_percent;
 };
 
 std::vector<ProcessInfo> get_all_processes();
