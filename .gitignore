@@ -1,0 +1,15 @@
+# Compiled Object files
+*.o
+obj/
+
+# Executable binary
+process_monitor
+
+# IDE and Editor files
+.vscode/
+.idea/
+*.swp
+*~
+
+# OS generated files
+.DS_Store
