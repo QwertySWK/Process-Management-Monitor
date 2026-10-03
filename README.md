@@ -110,8 +110,8 @@ Process-Monitor-Project/
 
 | Student ID | Name | Project Role & Contributions |
 | :--- | :--- | :--- |
-| `6730300051` | `Krairawee Boonthad` | **Data Extraction & Parser:** Handled file I/O operations for the `/proc` directory and string tokenization. |
-| `6730300116` | `Charin Phuaphumcharoen` | **Process Metrics & Logic:** Implemented CPU/RAM calculation algorithms and the Process Hierarchy tree sorting. |
-| `6730300175` | `Soungwut Konak` | **TUI Developer:** Designed the real-time interactive dashboard using the `ncurses` library. |
-| `6730300574` | `Siwakorn Pratumsuwan` | **Process Controller:** Integrated Linux system calls for process management and signal handling. |
-| `6730300701` | `Kittikanoot Sang-iam` | **QA, Integration & Demo Master:** Managed code integration, Makefile setup, and prepared the final English presentation. |
+| `6730300116` | `Charin Phuaphumcharoen` | **Data Extraction & Parser:** Handled file I/O operations for the `/proc` directory and string tokenization. |
+| `6730300051` | `Krairawee Boonthad` | **Process Metrics & Logic:** Implemented CPU/RAM calculation algorithms and the Process Hierarchy tree sorting. |
+| `6730300574` | `Siwakorn Pratumsuwan` | **TUI Developer:** Designed the real-time interactive dashboard using the `ncurses` library. |
+| `6730300701` | `Kittikanoot Sangiam` | **Process Controller:** Integrated Linux system calls for process management and signal handling. |
+| `6730300175` | `Soungwut Konak` | **QA, Integration & Demo Master:** Managed code integration, Makefile setup, and prepared the final English presentation. |
