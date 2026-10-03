@@ -21,9 +21,9 @@ void render_tui(const std::vector<ProcessInfo>& procs, int selected_idx) {
     attron(A_BOLD);
     mvprintw(0, 0, "=== Linux Process Management Monitor ===");
     attroff(A_BOLD);
-    mvprintw(1, 0, "Keys: [Up/Down] Navigate | [k] Kill | [s] Suspend | [c] Cont | [q] Quit");
-    mvprintw(3, 0, "%-10s %-30s %-10s %-15s", "PID", "NAME", "STATE", "MEM(KB)");
-    mvprintw(4, 0, "----------------------------------------------------------------------");
+    mvprintw(1, 0, "Keys: [Up/Down] Navigate | [t] Terminate | [k] Kill | [s] Suspend | [c] Continue | [q] Quit");
+    mvprintw(3, 0, "%-10s %-30s %-10s %-12s %-10s", "PID", "NAME", "STATE", "CPU(%)", "MEM(KB)");
+    mvprintw(4, 0, "--------------------------------------------------------------------------------");
 
     int max_y, max_x;
     getmaxyx(stdscr, max_y, max_x);
@@ -44,10 +44,11 @@ void render_tui(const std::vector<ProcessInfo>& procs, int selected_idx) {
             attron(A_REVERSE); // Highlight แถวที่เลือก
         }
         
-        mvprintw(start_row + i, 0, "%-10d %-30s %-10c %-15ld", 
+        mvprintw(start_row + i, 0, "%-10d %-30s %-10c %-12.2f %-10ld",
                  procs[actual_idx].pid, 
                  procs[actual_idx].name.c_str(), 
                  procs[actual_idx].state,
+             procs[actual_idx].cpu_percent,
                  procs[actual_idx].memory_kb);
                  
         if (actual_idx == selected_idx) {
