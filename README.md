@@ -49,7 +49,7 @@ sudo apt install build-essential libncurses5-dev libncursesw5-dev
 ## Build and Execution
 
 **1. Clone and Navigate**
-Extract the project ZIP file (e.g., `Group_Name_Project2.zip`) and navigate to the root directory.
+Extract the project ZIP file (e.g., `Process-Monitor-Project.zip`) and navigate to the root directory.
 
 **2. Compile the Project**
 Use the provided `Makefile` to compile the source code automatically.
