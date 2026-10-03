@@ -29,6 +29,7 @@ int main() {
             case KEY_DOWN: if (selected_idx < (int)procs.size() - 1) selected_idx++; break;
             
             // ส่ง Signals ไปยัง PID ที่ถูกเลือก
+            case 't': send_signal(procs[selected_idx].pid, SIGTERM); break;
             case 'k': send_signal(procs[selected_idx].pid, SIGKILL); break;
             case 's': send_signal(procs[selected_idx].pid, SIGSTOP); break;
             case 'c': send_signal(procs[selected_idx].pid, SIGCONT); break;
