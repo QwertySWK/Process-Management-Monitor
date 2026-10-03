@@ -13,3 +13,6 @@ process_monitor
 
 # OS generated files
 .DS_Store
+
+# Mocking and test files
+test/
